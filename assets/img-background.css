@@ -1,0 +1,5 @@
+.img-home{
+    background: linear-gradient(#152c3c, #e13d2733), url("img/backgrond_PSE.jpg");
+    background-position: center;
+    background-size: cover;
+}
