@@ -107,7 +107,7 @@ h1,h2,h3,h4,h5,h6,
     margin-top: 50px;
 }
 
-.section-title,#services1 h3, #services1 p, #services2 h3, #services2 p{
+.section-title, #services1 h3, #services1 p, #services2 h3, #services2 p{
     color: var(--azul-principal);
 }
 
@@ -127,6 +127,58 @@ h1,h2,h3,h4,h5,h6,
 }
 
 .img-servicos img{
+    width: 100%;
+    height: auto;
+}
+    /*serviços efeito*/
+.servicos{
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.servicos::after{
+    content: "";
+    width: 40px;
+    height:40px;
+    background: rgba(51, 102, 139, 0.425);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: var(--transition);
+}
+
+.servicos:hover::after{
+    width: 100%;
+    height:100%;
+    background: var(--azul-principal);
+    z-index: -1;
+    cursor: pointer;
+}
+
+.servicos:hover h3{
+    color: var(--laranja-principal) !important;
+}
+
+.servicos:hover p{
+    color: white !important;
+}
+
+/*SERVIÇOS DIGITAIS*/
+
+#servicodigitais h3, #servicodigitais p{
+    color: var(--azul-principal);
+}
+
+.img-digitail{
+    width: 120px;
+    height: 120px;
+    background-color: #e13e27;
+    margin: 5px auto;
+}
+
+.img-digitail img{
     width: 100%;
     height: auto;
 }
