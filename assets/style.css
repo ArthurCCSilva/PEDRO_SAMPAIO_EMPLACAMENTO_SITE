@@ -253,9 +253,7 @@ footer .line{
 
 /*MOBILE ATE 375PX*/
 @media (max-width: 426px) {
-    body{
-       max-width: 425px 
-    }
+
     h1 {
     font-size: 2rem !important;
     }
