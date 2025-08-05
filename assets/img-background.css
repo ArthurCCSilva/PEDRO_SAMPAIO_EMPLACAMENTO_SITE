@@ -27,3 +27,9 @@
     background-position: center;
     background-size: cover;
 }
+
+.img-solicitacao-emplacamento{
+    background: linear-gradient(#152c3c, #e13d2733), url("img/solicitacao_emplacamento_bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
