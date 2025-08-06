@@ -39,3 +39,8 @@
     background-position: center;
     background-size: cover;
 }
+.img-impressao-crlv{
+    background: linear-gradient(#152c3c, #e13d2733), url("img/impressao_crlv_bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
