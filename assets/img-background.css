@@ -33,3 +33,9 @@
     background-position: center;
     background-size: cover;
 }
+
+.img-boleto-ipva{
+    background: linear-gradient(#152c3c, #e13d2733), url("img/boleto_ipva_bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
