@@ -1,3 +1,10 @@
+function atualizarAnoFooter() {
+  const elementoAno = document.getElementById("anoAtual");
+  if (elementoAno) {
+    elementoAno.textContent = new Date().getFullYear();
+  }
+}
+
 //FOOTER
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelector('.footer').innerHTML = `
@@ -13,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             <p>PSE - Pedro Sampaio Emplacamentos</p>
                             <div class="sociais-icons">
                                 <a href="https://wa.me/5588999090835?text=" target="_blank"><i class="ri-whatsapp-fill"></i></a>
-                                <a href="mailto:waltersenador@hotmail.com" target="_blank"><i class="ri-mail-fill"></i></a>
+                                <a href="mailto:despachantepedro90@gmail.com" target="_blank"><i class="ri-mail-fill"></i></a>
                                 <a href="https://www.instagram.com/pedrosampaio_45/" target="_blank"><i class="ri-instagram-fill"></i></a>
                                 <a href="https://www.facebook.com/pedrosampaio.sampaio.3?locale=pt_BR" target="_blank"><i class="ri-facebook-circle-fill"></i></a>
                             </div>
@@ -38,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             <ul>
                                 <li>WhatsApp: (88)9 9909-0835</li>
                                 <li>Instagram: @pedrosampaio_45</li>
-                                <li>E-mail: waltersenador@hotmail.com</li>
+                                <li>E-mail: despachantepedro90@gmail.com</li>
                                 <li>CNPJ: 42.939.598/0001-29</li>
                             </ul>
                         </div>
@@ -59,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="container">
                     <div class="row g-4 justify-content-between">
                         <div class="col-auto">
-                            <p class="mb-0">© Todos os direitos reservados a PSE - Pedro Sampaio Emplacamentos</p>
+                            <p class="mb-0">© <span id="anoAtual"></span> Todos os direitos reservados a PSE - Pedro Sampaio Emplacamentos</p>
                         </div>
                         <div class="col-auto">
                             <p class="mb-0">Criado por:<a href="https://www.instagram.com/connect_si_15/" target="_blank"> Connect -
@@ -69,5 +76,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
             </div>
         </footer>
-    `
+    `;
+    atualizarAnoFooter();
 });
