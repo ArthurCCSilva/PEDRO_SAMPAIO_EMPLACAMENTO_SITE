@@ -56,3 +56,9 @@
     background-position: center;
     background-size: cover;
 }
+
+.img-contato-bg{
+    background: linear-gradient(#152c3c, #e13d2733), url("img/contato-bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
